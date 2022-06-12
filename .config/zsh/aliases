@@ -1,0 +1,31 @@
+# Github
+alias gs='git status'
+alias ga='git add'
+alias gp='git push'
+alias gc='git commit'
+alias gpl='git pull'
+alias conf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias upconf='config add -u; config status; config commit -m'
+
+# ZSH
+alias src='source $ZDOTDIR/.zshrc'
+alias ls='ls --color=auto'
+alias ll='ls -la'
+alias c='clear'
+alias ..='cd ..'
+alias update='sudo pacman -Syyu'
+alias v='nvim'
+alias vs='sudo nvim'
+
+# Directory navigation
+
+alias d='dirs -v -10'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+# Safety
+alias rm='rm -i --preserve-root'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+
