@@ -1,4 +1,4 @@
-echo working
+neofetch 
 # Aliases
 source $ZDOTDIR/aliases
 
