@@ -3,9 +3,10 @@ neofetch
 source $ZDOTDIR/aliases
 setopt completealiases
 
-# History
+# History -------------------------------------------------------------
 
 setopt HIST_SAVE_NO_DUPS
+bindkey '^R' history-incremental-search-backward
 
 # Completion TODO https://github.com/Phantas0s/.dotfiles/blob/master/zsh/completion.zsh
 zmodload zsh/complist
@@ -13,17 +14,15 @@ autoload -U compinit; compinit
 
 _comp_options+=(globdots)
 
-# Prompt
+# Prompt -------------------------------------------------------------
 
-# source $ZDOTDIR/prompt
-
-# Directory stack
+# Directory stack ----------------------------------------------------
 
 setopt AUTO_PUSHD # push current directory on dstack
 setopt PUSHD_IGNORE_DUPS
 setopt PUSHD_SILENT
 
-# Vim mode
+# Vim mode -----------------------------------------------------------
 
 bindkey -v
 export KEYTIMEOUT=1
