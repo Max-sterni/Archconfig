@@ -1,6 +1,7 @@
 neofetch 
 # Aliases
 source $ZDOTDIR/aliases
+setopt completealiases
 
 # History
 

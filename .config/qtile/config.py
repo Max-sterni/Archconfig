@@ -47,6 +47,16 @@ terminal = guess_terminal()
 keys = [
     # A list of available commands that can be bound to keys can be found
     # at https://docs.qtile.org/en/latest/manual/config/lazy.html
+
+    # CUSTOME Function keys 
+    Key([], 'XF86AudioRaiseVolume', lazy.spawn("amixer -c 0 -q set Master 2dB+")),
+    Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer -c 0 -q set Master 2dB-')),
+    Key([], 'XF86AudioMute', lazy.spawn('amixer -D pulse set Master toggle')),    
+    Key([], 'XF86MonBrightnessUp', lazy.spawn('xbacklight -inc 10')),
+    Key([], 'XF86MonBrightnessDown', lazy.spawn('xbacklight -dec 10')),
+    Key([mod], 'z', lazy.spawn(['sh','-c','escrotum --select']) ),
+
+
     # Switch between windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
