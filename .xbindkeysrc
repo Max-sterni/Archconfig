@@ -40,7 +40,7 @@
 # Examples of commands:
 
 "firefox" 
-  control+shift + q
+   XF86AudioRaiseVolume
 
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s

@@ -10,3 +10,12 @@
 
 ## Network Manager *Network Manager*
 
+## Keymanagement 
+
+### Qtile 
+
+All window control keys are bound with **super**
+
+### xbindkeys
+
+All other keycombinations are handeled by xbindkeys
