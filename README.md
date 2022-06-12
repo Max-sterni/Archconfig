@@ -6,7 +6,7 @@
 
 ## Terminal Emulator *Alacritty*
 
-## Aplication Manager *Rofi*
+## Application Manager *Rofi*
 
 ## Network Manager *Network Manager*
 
