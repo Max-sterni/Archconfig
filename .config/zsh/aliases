@@ -5,7 +5,7 @@ alias gp='git push'
 alias gc='git commit'
 alias gpl='git pull'
 alias conf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias upconf='config add -u; config status; config commit -m'
+alias upconf='conf add -u; conf status; conf commit -m'
 
 # ZSH
 alias src='source $ZDOTDIR/.zshrc'

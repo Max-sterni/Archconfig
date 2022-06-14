@@ -19,3 +19,5 @@ All window control keys are bound with **super**
 ### xbindkeys
 
 All other keycombinations are handeled by xbindkeys
+
+## GTK Manager *lxappearance*
