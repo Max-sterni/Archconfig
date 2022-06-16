@@ -1,0 +1,4 @@
+# Change keymap
+$ setxbmap *keymap*
+
+
