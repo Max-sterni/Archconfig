@@ -39,8 +39,14 @@
 
 # Examples of commands:
 
-"firefox" 
+"pactl set-sink-volume @DEFAULT_SINK@ +5%" 
    XF86AudioRaiseVolume
+
+"pactl set-sink-volume @DEFAULT_SINK@ -5%" 
+   XF86AudioLowerVolume
+
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+   XF86AudioMute
 
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s
