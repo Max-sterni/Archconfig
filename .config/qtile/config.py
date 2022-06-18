@@ -202,7 +202,7 @@ screens = [
                 ),
                 widget.Systray(),
             ],
-            25,
+            30,
             background="#232136",
         ),
     ),

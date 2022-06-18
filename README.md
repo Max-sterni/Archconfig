@@ -21,3 +21,7 @@ All window control keys are bound with **super**
 All other keycombinations are handeled by xbindkeys
 
 ## GTK Manager *lxappearance*
+
+## File Manager *ranger*
+
+## Notifications *dunst*
