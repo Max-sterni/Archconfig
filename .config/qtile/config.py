@@ -81,6 +81,8 @@ keys = [
 
     #---    Exit Qtile      ---#
     Key([mod, "shift"], "e", lazy.shutdown()),
+
+    #---    Volume Controle ---#
 ]
 
 #---------------#
@@ -88,7 +90,7 @@ keys = [
 #---------------#
 
 groups = [Group(i) for i in [
-    "   ", "   ", "   ", "   ", "   ", "   ", "   ",
+    "   ", "   ", " ☭  ", "   ", " 𝅘𝅥𝅮  ", "   ", "   ",
 ]]
 
 for i, group in enumerate(groups):
@@ -157,54 +159,27 @@ screens = [
                     foreground="#232136"
                 ),
                 widget.TextBox(
-                    text='',
-                    background="#232136",
-                    foreground="#f6c177",
-                    padding=-3,
-                    fontsize=38
+                    text='⚡',
+                    background="#2EE671",
+                    foreground="#191724",
+                    padding=7
                 ),
+                widget.Battery(
+                    background="#2EE671",
+                    foreground="#191724",
+                    low_foreground="#191724",
+                    low_background="#E65750",
+                    update_interval=10
+                    ),
                 widget.TextBox(
                     text=' ',
-                    background="#f6c177",
+                    background="#5197DB",
                     foreground="#191724",
                     padding=7
                 ),
                 widget.CurrentLayout(
-                    background="#f6c177",
+                    background="#5197DB",
                     foreground="#191724"
-                ),
-                widget.TextBox(
-                    text='',
-                    background="#f6c177",
-                    foreground="#e0def4",
-                    padding=-3,
-                    fontsize=38
-                ),
-                widget.ThermalZone(
-                    format=" {temp}°C",
-                    fgcolor_normal="#191724",
-                    background="#e0def4",
-                    zone="/sys/class/thermal/thermal_zone0/temp"
-                ),
-                widget.TextBox(
-                    text='',
-                    foreground="#eb6f92",
-                    background="#e0def4",
-                    padding=-3,
-                    fontsize=38
-                ),
-                widget.Memory(
-                    format="溜{MemUsed: .0f}{mm}",
-                    background="#eb6f92",
-                    foreground="#191724",
-                    interval=1.0
-                ),
-                widget.TextBox(
-                    text='',
-                    background="#eb6f92",
-                    foreground="#9ccfd8",
-                    padding=-3,
-                    fontsize=38
                 ),
                 widget.Net(
                     interface="enp1s0",
@@ -212,13 +187,6 @@ screens = [
                     background="#9ccfd8",
                     foreground="#191724",
                     update_interval=1.0
-                ),
-                widget.TextBox(
-                    text='',
-                    background="#9ccfd8",
-                    foreground="#c4a7e7",
-                    padding=-3,
-                    fontsize=38
                 ),
                 widget.TextBox(
                     text='',
@@ -231,13 +199,6 @@ screens = [
                     foreground="#191724",
                     format="%H:%M - %d/%m/%Y",
                     update_interval=60.0
-                ),
-                widget.TextBox(
-                    text='K',
-                    background="#c4a7e7",
-                    foreground="#232136",
-                    padding=-3,
-                    fontsize=38
                 ),
                 widget.Systray(),
             ],
