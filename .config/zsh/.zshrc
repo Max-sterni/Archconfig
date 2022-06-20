@@ -1,4 +1,7 @@
-neofetch 
+
+# Display image from pictures/jp2a in ascii
+find $HOME/pictures/jp2a/ -type f | shuf -n 1 | convert @- png:- | jp2a - --color --height=25
+
 # Aliases
 source $ZDOTDIR/aliases
 setopt completealiases
@@ -15,6 +18,8 @@ autoload -U compinit; compinit
 _comp_options+=(globdots)
 
 # Prompt -------------------------------------------------------------
+
+source $ZDOTDIR/prompt
 
 # Directory stack ----------------------------------------------------
 

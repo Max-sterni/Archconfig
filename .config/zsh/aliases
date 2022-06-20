@@ -8,14 +8,14 @@ alias conf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias upconf='conf add -u; conf status; conf commit -m'
 
 # ZSH
-alias src='source $ZDOTDIR/.zshrc'
+alias src='clear; source $ZDOTDIR/.zshrc'
 alias ls='ls --color=auto'
 alias ll='ls -la'
 alias c='clear'
 alias ..='cd ..'
 alias update='sudo pacman -Syyu'
 alias v='nvim'
-alias vs='sudo nvim'
+alias sv='sudo nvim'
 
 # Directory navigation
 
