@@ -83,6 +83,9 @@ keys = [
     Key([mod, "shift"], "e", lazy.shutdown()),
 
     #---    Volume Controle ---#
+    Key([mod], "F1", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+    Key([mod], "F2", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
+    Key([mod], "F3", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
 ]
 
 #---------------#
@@ -90,7 +93,7 @@ keys = [
 #---------------#
 
 groups = [Group(i) for i in [
-    "   ", "   ", " ☭  ", "   ", " 𝅘𝅥𝅮  ", "   ", "   ",
+    "   ", "   ", " ☭  ", "   ", "   ", "   ", " 𝅘𝅥𝅮  ",
 ]]
 
 for i, group in enumerate(groups):
@@ -108,12 +111,8 @@ for i, group in enumerate(groups):
 
 layouts = [
     layout.MonadTall(border_focus="#9ccfd8",
-                     border_normal="#31748f", border_width=1, margin=10),
+                     border_normal="#31748f", border_width=1, margin=7),
     layout.Max(),
-    layout.Bsp(border_focus="#9ccfd8", border_normal="#31748f",
-               border_width=1, margin=10),
-    layout.MonadWide(border_focus="#9ccfd8",
-                     border_normal="#31748f", border_width=1, margin=10),
     layout.RatioTile(border_focus="#9ccfd8",
                      border_normal="#31748f", border_width=1, margin=10),
     # layout.Matrix(),
@@ -148,7 +147,7 @@ screens = [
                     padding=6
                 ),
                 widget.GroupBox(
-                    active="#ffffff",
+                    active="#1793d0",
                     rounded=False,
                     highlight_color="#40e0d0",
                     highlight_method="line",

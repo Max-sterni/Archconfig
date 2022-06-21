@@ -1,6 +1,6 @@
 
 # Display image from pictures/jp2a in ascii
-find $HOME/pictures/jp2a/ -type f | shuf -n 1 | convert @- png:- | jp2a - --color --height=25
+find $HOME/Pictures/jp2a/ -type f | shuf -n 1 | convert @- png:- | jp2a - --color --height=30
 
 # Aliases
 source $ZDOTDIR/aliases

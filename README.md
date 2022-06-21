@@ -1,4 +1,4 @@
-# My Arch config 
+# Programs
 
 ## Terminal *zsh*
 
@@ -12,14 +12,14 @@
 
 ## Keymanagement 
 
-### Qtile 
+## Windowmanager *Qtile*
 
 All window control keys are bound with **super**
 Close window *super + q*
 Open terminal *super + return*
 Open firefox *super + b*
 
-### xbindkeys
+## xbindkeys
 
 All other keycombinations are handeled by xbindkeys
 
