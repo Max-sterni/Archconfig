@@ -75,6 +75,8 @@ keys = [
 
     #---    Kill window     ---#
     Key([mod], "q", lazy.window.kill()),
+    #---    Lock Session    ---#
+    Key([mod], "l", lazy.spawn("dm-tool lock")),
 
     #---    Reload Qtile    ---#
     Key([mod, "shift"], "r", lazy.reload_config()),

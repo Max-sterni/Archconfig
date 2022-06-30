@@ -23,7 +23,7 @@ alias d='dirs -v -10'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 # Safety
-alias rm='rm -i --preserve-root'
+alias rm='rm -I --preserve-root'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
