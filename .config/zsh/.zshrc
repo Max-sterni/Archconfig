@@ -9,6 +9,7 @@ setopt completealiases
 # History -------------------------------------------------------------
 
 setopt HIST_SAVE_NO_DUPS
+setopt histignoredups
 bindkey '^R' history-incremental-search-backward
 
 # Completion TODO https://github.com/Phantas0s/.dotfiles/blob/master/zsh/completion.zsh
