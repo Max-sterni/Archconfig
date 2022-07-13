@@ -76,7 +76,7 @@ keys = [
     #---    Kill window     ---#
     Key([mod], "q", lazy.window.kill()),
     #---    Lock Session    ---#
-    Key([mod], "l", lazy.spawn("dm-tool lock")),
+    Key([mod], "F10", lazy.spawn("dm-tool lock")),
 
     #---    Reload Qtile    ---#
     Key([mod, "shift"], "r", lazy.reload_config()),
@@ -88,6 +88,10 @@ keys = [
     Key([mod], "F1", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
     Key([mod], "F2", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
     Key([mod], "F3", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
+
+    #---    Toggle Touchpad ---#
+    Key([mod], "t", lazy.spawn("touchpad_toggle")),
+
 ]
 
 #---------------#
