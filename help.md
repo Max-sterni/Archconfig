@@ -4,6 +4,7 @@ $ setxbmap *keymap*
 ### Change brightness
 $ brightnessctl -l **list devices**
 $ brightnessctl --device=*devie* s *brightness*
+[mod] + F5/F6 **change brightness**
 
 ### Synaptics 
 \# cp ~/.config/synaptics/70-synaptics.conf /etc/X11/xorg.conf.d/

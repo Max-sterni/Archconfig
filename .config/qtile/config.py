@@ -89,6 +89,11 @@ keys = [
     Key([mod], "F2", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
     Key([mod], "F3", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
 
+    #---    Brightness Controle ---#
+    Key([mod], "F5", lazy.spawn("brightnessctl s 10%-")),
+    Key([mod], "F6", lazy.spawn("brightnessctl s +10%")),
+
+
     #---    Toggle Touchpad ---#
     Key([mod], "t", lazy.spawn("touchpad_toggle")),
 
